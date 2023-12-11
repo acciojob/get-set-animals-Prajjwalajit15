@@ -29,3 +29,18 @@ window.Animal = Animal;
 window.Dog = Dog;
 window.Cat = Cat;
 
+// Example usage:
+const genericAnimal = new Animal("Generic");
+console.log(genericAnimal.species); // Output: Generic
+genericAnimal.makeSound(); // Output: Generic animal sound
+
+const dog = new Dog("Dog");
+console.log(dog.species); // Output: Dog
+dog.makeSound(); // Output: Generic animal sound
+dog.bark(); // Output: Woof
+
+const cat = new Cat("Cat");
+console.log(cat.species); // Output: Cat
+cat.makeSound(); // Output: Generic animal sound
+cat.purr(); // Output: Purr
+
